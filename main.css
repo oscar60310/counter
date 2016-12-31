@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    font-family: 微軟正黑體;
+}
+.back-area{
+    background-image: url("./back.jpg");
+    margin: 0;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.back-cover{
+    position: absolute;
+    margin: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.44);
+    width: 100%;
+}
+.time-area{
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: calc(50% - 80px);
+    text-align: center;
+}
+.title{
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: calc(50% + 40px);
+    text-align: center;
+    font-size: 40pt;
+    letter-spacing: 10px;
+}
+.t-day,.t-min,.t-hour,.t-sec{
+    font-size: 60pt;
+    font-weight: 500;
+}
+.time-unit{
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+}
+.dis{
+    font-size: 18pt;
+    font-weight: 500;
+}
