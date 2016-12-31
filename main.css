@@ -45,3 +45,12 @@ body{
     font-size: 18pt;
     font-weight: 500;
 }
+@media screen and (max-width: 620px){
+    .title{
+        top: auto;
+        bottom: 2em;
+    }
+    .time-area{
+        top: calc(50% - 120px);
+    }
+}
