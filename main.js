@@ -25,14 +25,20 @@ function count() {
         return;
     }
 
-    console.log(bet);
+    //console.log(bet);
+    var tt =  $('#title').html()+" ";
     $('#day').html(Math.floor(bet / 60 / 60 / 24));
+    tt += $('#day').html() + ":";
     bet %= 60 * 60 * 24;
     $('#hour').html(Math.floor(bet / 60 / 60));
+    tt += $('#hour').html() + ":";
     bet %= 60 * 60;
     $('#min').html(Math.floor(bet / 60));
+    tt += $('#min').html() + ":";
     bet %= 60;
     $('#sec').html(Math.floor(bet));
+    tt += $('#sec').html();
+    document.title = tt;
 
     setTimeout(count, 1000);
 }
